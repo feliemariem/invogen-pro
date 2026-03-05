@@ -1,8 +1,7 @@
 export default function WorkOrderDetails() {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-      <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-        <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+    <div className="bg-white rounded-lg shadow p-6">
+      <h2 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">
         Work Order Details
       </h2>
 
@@ -12,9 +11,9 @@ export default function WorkOrderDetails() {
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Client
           </label>
-          <select className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-500">
-            <option>Select client...</option>
-          </select>
+          <div className="h-10 bg-gray-100 rounded border border-gray-300 flex items-center px-3 text-gray-400">
+            Select client...
+          </div>
         </div>
 
         {/* Work Order Number */}
@@ -22,44 +21,9 @@ export default function WorkOrderDetails() {
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Work Order #
           </label>
-          <input
-            type="text"
-            placeholder="Enter WO number"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50"
-          />
-        </div>
-
-        {/* Site Information */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Site Name
-          </label>
-          <input
-            type="text"
-            placeholder="Enter site name"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Site Address
-          </label>
-          <input
-            type="text"
-            placeholder="Enter address"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50"
-          />
-        </div>
-
-        {/* Technician Selection */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Technician
-          </label>
-          <select className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-500">
-            <option>Select technician...</option>
-          </select>
+          <div className="h-10 bg-gray-100 rounded border border-gray-300 flex items-center px-3 text-gray-400">
+            Enter work order number...
+          </div>
         </div>
 
         {/* Service Date */}
@@ -67,10 +31,19 @@ export default function WorkOrderDetails() {
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Service Date
           </label>
-          <input
-            type="date"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50"
-          />
+          <div className="h-10 bg-gray-100 rounded border border-gray-300 flex items-center px-3 text-gray-400">
+            Select date...
+          </div>
+        </div>
+
+        {/* Technician Selection */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Technician
+          </label>
+          <div className="h-10 bg-gray-100 rounded border border-gray-300 flex items-center px-3 text-gray-400">
+            Select technician...
+          </div>
         </div>
 
         {/* Description */}
@@ -78,11 +51,9 @@ export default function WorkOrderDetails() {
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Work Description
           </label>
-          <textarea
-            rows={3}
-            placeholder="Describe the work performed..."
-            className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 resize-none"
-          />
+          <div className="h-24 bg-gray-100 rounded border border-gray-300 p-3 text-gray-400">
+            Enter description...
+          </div>
         </div>
       </div>
     </div>

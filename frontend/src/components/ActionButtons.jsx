@@ -1,22 +1,27 @@
 export default function ActionButtons() {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-      <h3 className="text-sm font-medium text-gray-700 mb-3 flex items-center gap-2">
-        <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+    <div className="bg-white rounded-lg shadow p-4">
+      <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-3">
         Actions
       </h3>
-      <div className="flex flex-wrap gap-3">
-        <button className="px-4 py-2 bg-gray-100 text-gray-700 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors cursor-pointer">
+      <div className="flex gap-3">
+        <button
+          className="flex-1 px-4 py-3 bg-gray-200 text-gray-500 rounded-lg font-medium cursor-not-allowed"
+          disabled
+        >
           Save Draft
         </button>
-        <button className="px-4 py-2 bg-blue-100 text-blue-700 rounded-md text-sm font-medium hover:bg-blue-200 transition-colors cursor-pointer">
-          Preview Invoice
+        <button
+          className="flex-1 px-4 py-3 bg-gray-200 text-gray-500 rounded-lg font-medium cursor-not-allowed"
+          disabled
+        >
+          Preview
         </button>
-        <button className="px-4 py-2 bg-green-600 text-white rounded-md text-sm font-medium hover:bg-green-700 transition-colors cursor-pointer">
+        <button
+          className="flex-1 px-4 py-3 bg-blue-200 text-blue-400 rounded-lg font-medium cursor-not-allowed"
+          disabled
+        >
           Generate Invoice
-        </button>
-        <button className="px-4 py-2 bg-gray-50 text-gray-500 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors cursor-pointer">
-          Clear All
         </button>
       </div>
     </div>

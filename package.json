@@ -1,13 +1,17 @@
 {
   "name": "invogen-pro",
   "version": "1.0.0",
-  "description": "InvoGenPro by FNR Core - AI-powered work order management and invoicing platform",
+  "description": "AI-powered work order management and invoicing platform",
+  "private": true,
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:backend": "cd backend && npm run dev",
-    "dev:frontend": "cd frontend && npm run dev",
-    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "install:all": "npm install && npm install --prefix frontend && npm install --prefix backend"
   },
+  "keywords": [],
+  "author": "FNR Core",
+  "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2"
   }
