@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Felie",
+      "passwordHash": "$2b$12$6Q2UjHqvL1jKz06zGV.FxeZkPOePu0Cxpyv9Cckx5nVN3Uzm3sYwy",
+      "role": "admin",
+      "createdAt": "2025-01-01T00:00:00.000Z"
+    }
+  ]
+}

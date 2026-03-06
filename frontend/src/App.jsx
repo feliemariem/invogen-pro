@@ -1,3 +1,6 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import ForgotPassword from './pages/ForgotPassword';
 import WorkOrderDetails from './components/WorkOrderDetails';
 import CostCalculator from './components/CostCalculator';
 import LiveCostSummary from './components/LiveCostSummary';
@@ -5,7 +8,7 @@ import QuickAddShortcuts from './components/QuickAddShortcuts';
 import ActionButtons from './components/ActionButtons';
 import './index.css';
 
-function App() {
+function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
@@ -40,6 +43,18 @@ function App() {
         </div>
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
